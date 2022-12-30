@@ -24,17 +24,17 @@ class TestLogin(unittest.TestCase):
         time.sleep(3)
 
         #Open page Admin
-        browser.find_element(By.XPATH,"/html/body/div/div[1]/div[1]/aside/nav/div[2]/ul/li[1]/a/span").click() # klik tombol login by XPATH
+        browser.find_element(By.XPATH,"/html/body/div/div[1]/div[1]/aside/nav/div[2]/ul/li[1]/a/span").click() # klik menu Admin
         time.sleep(3)
 
         #Open Tab Nationalities
-        browser.find_element(By.XPATH,"/html/body/div/div[1]/div[1]/header/div[2]/nav/ul/li[5]/a").click() # klik tombol login by XPATH
+        browser.find_element(By.XPATH,"/html/body/div/div[1]/div[1]/header/div[2]/nav/ul/li[5]/a").click() # klik sub menu Nationalities
         time.sleep(3)
-        browser.find_element(By.XPATH,"/html/body/div/div[1]/div[2]/div[2]/div/div/div[1]/div/button").click() # klik tombol login by XPATH
+        browser.find_element(By.XPATH,"/html/body/div/div[1]/div[2]/div[2]/div/div/div[1]/div/button").click() # klik tombol +Add
         time.sleep(3)
-        browser.find_element(By.XPATH,"/html/body/div/div[1]/div[2]/div[2]/div/div/form/div[1]/div/div[2]/input").send_keys("COBA") # klik tombol login by XPATH
+        browser.find_element(By.XPATH,"/html/body/div/div[1]/div[2]/div[2]/div/div/form/div[1]/div/div[2]/input").send_keys("COBA") # Isi name
         time.sleep(3)
-        browser.find_element(By.XPATH,"/html/body/div/div[1]/div[2]/div[2]/div/div/form/div[2]/button[2]").click() # klik tombol login by XPATH
+        browser.find_element(By.XPATH,"/html/body/div/div[1]/div[2]/div[2]/div/div/form/div[2]/button[2]").click() # klik tombol save
         time.sleep(7)
 
     def tearDown(self): 
